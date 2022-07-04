@@ -1,0 +1,53 @@
+[
+    {
+        "Architecture": "i386",
+        "CreationDate": "",
+        "ImageId": "aki-00806369",
+        "ImageLocation": "karmic-kernel-zul/ubuntu-kernel-2.6.31-300-ec2-i386-20091001-test-04.manifest.xml",
+        "ImageType": "kernel",
+        "Public": true,
+        "OwnerId": "099720109477",
+        "PlatformDetails": "Linux/UNIX",
+        "UsageOperation": "RunInstances",
+        "State": "available",
+        "BlockDeviceMappings": [],
+        "Hypervisor": "xen",
+        "RootDeviceType": "instance-store",
+        "VirtualizationType": "paravirtual",
+        "DeprecationTime": "2022-07-31T23:59:59.000Z"
+    },
+    {
+        "Architecture": "i386",
+        "CreationDate": "",
+        "ImageId": "aki-00896a69",
+        "ImageLocation": "karmic-kernel-zul/ubuntu-kernel-2.6.31-300-ec2-i386-20091002-test-04.manifest.xml",
+        "ImageType": "kernel",
+        "Public": true,
+        "OwnerId": "099720109477",
+        "PlatformDetails": "Linux/UNIX",
+        "UsageOperation": "RunInstances",
+        "State": "available",
+        "BlockDeviceMappings": [],
+        "Hypervisor": "xen",
+        "RootDeviceType": "instance-store",
+        "VirtualizationType": "paravirtual",
+        "DeprecationTime": "2022-07-31T23:59:59.000Z"
+    },
+    {
+        "Architecture": "i386",
+        "CreationDate": "",
+        "ImageId": "aki-00f41769",
+        "ImageLocation": "karmic-kernel-zul/ubuntu-kernel-2.6.31-301-ec2-i386-20091012-test-06.manifest.xml",
+        "ImageType": "kernel",
+        "Public": true,
+        "OwnerId": "099720109477",
+        "PlatformDetails": "Linux/UNIX",
+        "UsageOperation": "RunInstances",
+        "State": "available",
+        "BlockDeviceMappings": [],
+        "Hypervisor": "xen",
+        "RootDeviceType": "instance-store",
+        "VirtualizationType": "paravirtual",
+        "DeprecationTime": "2022-07-31T23:59:59.000Z"
+    }
+}
