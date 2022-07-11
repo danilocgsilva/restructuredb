@@ -1,4 +1,7 @@
 require "./build_data.pl";
+require "./get_key.pl";
+
+%data = &build_data;
 
 $count = %data;
 

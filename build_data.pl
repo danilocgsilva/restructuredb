@@ -1,6 +1,6 @@
 # %keypool is the object that will be assembled
 
-%data = &build_data;
+require "./get_key.pl";
 
 sub build_data {
 
@@ -34,10 +34,4 @@ sub get_value_type {
 	}
 }
 
-sub get_key {
-	my ($raw) = @_;
-	$key = $raw =~ s/^\s+"//r;
-	$key =~ s/".*$//;
-	chomp($key);
-	return ($key);
-}
+1
