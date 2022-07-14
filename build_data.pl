@@ -27,7 +27,7 @@ sub get_value_type {
 	$value =~ s/,$//;
 	if ($value =~ /"/) {
 		return ("string");
-	} elsif ($value =~ /]/) {
+	} elsif ($value =~ /[\]\[]/) {
 		return ("list");
 	} else {
 		return ("boolean");

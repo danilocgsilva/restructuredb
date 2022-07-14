@@ -31,3 +31,12 @@ If you just want to print/see the raw creating sqlite script, just do:
 ```
 perl create_table.pl < amis.json
 ```
+
+* ### `insert_script.pl`
+
+Generate the sql script to insert data into a sql database.
+
+Usage example:
+```
+perl insert_script.pl < my_json_formatted_data.json
+```
