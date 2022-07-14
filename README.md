@@ -31,6 +31,7 @@ If you just want to print/see the raw creating sqlite script, just do:
 ```
 perl create_table.pl < amis.json
 ```
+OBSERVATION: In the current state of development, the created table is called `amis`. Soon will give an option to set the table name.
 
 * ### `insert_script.pl`
 
@@ -40,3 +41,4 @@ Usage example:
 ```
 perl insert_script.pl < my_json_formatted_data.json
 ```
+OBSERVATION: In the current state of development, the created table is called `amis`. Soon will give an option to set the table name.
