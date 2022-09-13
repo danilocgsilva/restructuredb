@@ -37,8 +37,13 @@ OBSERVATION: In the current state of development, the created table is called `a
 
 Generate the sql script to insert data into a sql database.
 
-Usage example:
+Usage example to fill a sqlite database:
+```
+perl insert_script.pl < my_json_formatted_data.json | sqlite amis.db
+```
+OBSERVATION: In the current state of development, the created table is called `amis`. Soon will give an option to set the table name.
+
+If you just want to print the inser script, them:
 ```
 perl insert_script.pl < my_json_formatted_data.json
 ```
-OBSERVATION: In the current state of development, the created table is called `amis`. Soon will give an option to set the table name.
