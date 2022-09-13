@@ -5,7 +5,7 @@ $level = 0;
 while ($line = <STDIN>) {
 	if ($line =~ /{/) {
         $level++;
-        &printInsertLine(@keys, @values);
+        &printInsertLine(@keys, @values) if $level == 1;
         @keys = ();
         @values = ();
     }
