@@ -5,12 +5,12 @@ $level = 0;
 while ($line = <STDIN>) {
 	if ($line =~ /{/) {
         $level++;
-        &printInsertLine(@keys, @values) if $level == 1;
         @keys = ();
         @values = ();
     }
 
 	if ($line =~/}/) {
+        &printInsertLine(@keys, @values) if $level == 1;
         $level--;
     }
 
@@ -45,7 +45,6 @@ sub printInsertLine {
         foreach (@firstHalf) {
             $insertLine .= $_;
             if ($local_index < @firstHalf - 1) {
-                #print ", ";
                 $insertLine .= ", ";
             }
             $local_index++;
