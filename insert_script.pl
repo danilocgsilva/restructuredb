@@ -21,6 +21,9 @@ while ($line = <STDIN>) {
 }
 
 sub printInsertLine {
+
+    $insertLine = "";
+    
     if (@_ > 0) {
         $half = @_ / 2;
 
@@ -37,25 +40,28 @@ sub printInsertLine {
             $index++;
         }
 
-        print "INSERT INTO amis (";
+        $insertLine .= "INSERT INTO amis (";
         $local_index = 0;
         foreach (@firstHalf) {
-            print $_;
+            $insertLine .= $_;
             if ($local_index < @firstHalf - 1) {
-                print ", ";
+                #print ", ";
+                $insertLine .= ", ";
             }
             $local_index++;
         }
-        print ")";
-        print " VALUES (";
+        $insertLine .= ")";
+        $insertLine .= " VALUES (";
         $local_index = 0;
         foreach (@secondHalf) {
-            print "\"$_\"";
+            $insertLine .= "\"$_\"";
             if ($local_index < @firstHalf - 1) {
-                print ", ";
+                $insertLine .= ", ";
             }
             $local_index++;
         }
-        print ");\n";
+        $insertLine .= ");\n";
+
+        print $insertLine;
     }
 }
