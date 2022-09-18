@@ -5,12 +5,16 @@ $level = 0;
 while ($line = <STDIN>) {
 	if ($line =~ /{/) {
         $level++;
-        @keys = ();
-        @values = ();
+        if ($level == 1) {
+            @keys = ();
+            @values = ();
+        }
     }
 
 	if ($line =~/}/) {
-        &printInsertLine(@keys, @values) if $level == 1;
+        if ($level == 1) {
+            &printInsertLine(@keys, @values);
+        }
         $level--;
     }
 
