@@ -1,3 +1,5 @@
+package get_value;
+
 sub get_value {
     my ($line) = @_;
     chomp($line);

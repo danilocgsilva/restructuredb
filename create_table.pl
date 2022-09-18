@@ -1,9 +1,9 @@
 #!/usr/bin/perl
 
-require "./build_data.pl";
-require "./get_key.pl";
+require build_data;
+require get_key;
 
-%data = &build_data;
+%data = &build_data::build_data;
 
 $count = %data;
 

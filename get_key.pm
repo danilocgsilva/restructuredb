@@ -1,3 +1,5 @@
+package get_key;
+
 sub get_key {
 	my ($raw) = @_;
 	$key = $raw =~ s/^\s+"//r;

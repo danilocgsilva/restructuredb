@@ -1,7 +1,8 @@
 #!/usr/bin/perl
 
-require "./build_data.pl";
-require "./get_value.pl";
+require build_data;
+require get_value;
+require get_key;
 
 $level = 0;
 while ($line = <STDIN>) {
@@ -20,9 +21,9 @@ while ($line = <STDIN>) {
         $level--;
     }
 
-    if ($line =~ /".*": / and $level == 1 and &get_value_type($line) ne "list") {
-        push @keys, &get_key($line);
-        push @values, &get_value($line);
+    if ($line =~ /".*": / and $level == 1 and &build_data::get_value_type($line) ne "list") {
+        push @keys, &get_key::get_key($line);
+        push @values, &get_value::get_value($line);
 	}
 }
 
