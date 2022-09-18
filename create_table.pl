@@ -1,3 +1,5 @@
+#!/usr/bin/perl
+
 require "./build_data.pl";
 require "./get_key.pl";
 
